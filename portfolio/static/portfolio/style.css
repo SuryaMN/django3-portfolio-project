@@ -1,0 +1,71 @@
+.navbar-brand{
+    font-family:'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.navbar img{
+    margin-bottom: 0.5rem;
+}
+.navbar{
+    padding-top: 0;
+    /* margin-bottom: 3rem; */
+}
+
+.nav-item .nav-link{
+    font-size: 1.7rem;
+    font-family: 'Teko', sans-serif;
+    padding: 0;
+} 
+
+.nav-item{
+    padding:0 1.4rem;
+}
+
+.jumbotron,#project-heading{
+    max-width: 100%;
+    background:none;
+    font-family: 'Comfortaa', cursive;
+}
+
+#image-container img{
+    max-width: 100%;
+    border-radius: 2rem;
+    padding:0.5rem;
+    border: solid 2px black;
+}
+
+.container{
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+#project-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin:2rem;
+    
+}
+
+.card:hover{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+#blog-jumbotron{
+    text-align: center;
+}
+
+.blogs{
+    font-family: 'Comfortaa', cursive;
+}
+
+.blogs a{
+    font-family: 'Pacifico', cursive;
+}
+
+#blog-description{
+    font-family: 'Comfortaa', sans-serif;
+}

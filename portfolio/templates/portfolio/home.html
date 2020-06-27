@@ -1,0 +1,50 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}
+    Surya |  Home
+{% endblock %}
+{% block content %}
+  {% load static %}
+  <div class="container">
+
+    <div class="row  align-items-center">
+
+      <div class="col">
+        <div class="jumbotron">
+          <h1 class="display-4">Hey There!___________</h1>
+          <p class="lead">Welcome to my portfolio! Scroll down and have a look at my projects</p>
+        </div>
+      </div>
+
+      <div class="col" id="image-container">
+        <img src="{% static 'portfolio/ethnic_day.jpg' %}">
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <h1 class="m-auto" id="project-heading">Projects</h1>
+    </div><hr>
+  </div>
+
+  <div id="project-holder">
+
+  {% for project in projects%}
+  
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ project.image.url }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{project.title}}</h5>
+      <p class="card-text">{{project.description}}</p>
+      <a href="{{ project.url }}" target="_blank" class="btn btn-primary">View</a>
+    </div>
+  </div>
+
+  {% endfor%}
+
+  </div>
+
+{% endblock %}

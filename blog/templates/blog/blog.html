@@ -1,0 +1,21 @@
+{% extends 'portfolio/home.html' %}
+
+{% block title %}
+    Surya | Blogs
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron" id="blog-jumbotron">
+    <h1 class="display-4">Blog</h1>
+    <p class="lead">Surya has written {{blogs.count}} blog{{blogs.count | pluralize}}</p>
+  </div>
+
+  {% for blog in blogs%}
+    <div class="container blogs">
+      <h2><a href="{% url 'blog:detail' blog.id %}">{{blog.title}}</a></h2><br>
+      <p>{{blog.date | date:'M d Y' | upper}}</p>
+      <p>{{blog.description | striptags | truncatechars:100}}</p>
+    </div>
+  {% endfor %}
+
+{% endblock %}
