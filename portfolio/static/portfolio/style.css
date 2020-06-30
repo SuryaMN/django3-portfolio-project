@@ -25,6 +25,7 @@
     max-width: 100%;
     background:none;
     font-family: 'Comfortaa', cursive;
+    overflow:hidden;
 }
 
 #image-container img{
